@@ -1,0 +1,271 @@
+body {
+  background: ;
+  color: ; 
+  font-family: courier new;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1;
+    border-radius: ;
+}
+nav li {
+    float: left;
+    padding: 10px;
+    text-decoration: none;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav.collapsed ul {
+  display: none;
+}
+#dropdown-btn {
+  display: none;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  cursor: pointer;
+}
+#dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  background-color: black;
+  z-index: 0;
+}
+#dropdown-menu ul {
+  flex-direction: column;
+}
+#dropdown-menu li {
+  border-bottom: 1px solid #444;
+}
+@media screen and (max-width: 480px) {
+ nav li {
+  float: none;  
+ }
+ nav {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+ }
+ nav ul {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+ }
+ nav.collapsed ul {
+  display: flex;
+ }
+ #dropdown-btn {
+  display: block;
+ }
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  position: relative;
+  top: 70px;
+}
+.item {
+  border: solid black 2px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 60px;
+}
+/* .back {
+  width: 100%;
+  height: 100%;
+  display: grid;
+}
+.sun {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  position: fixed;
+  border-radius: 50%;
+  top: -50px;
+  left: -75px;
+  z-index: -1;
+}
+.sky {
+  background-color: skyblue;
+  width: 100%;
+  height: 200px;
+  position: fixed;
+  z-index: -2;
+  
+}
+.ocean {
+  background-color: aqua;
+  width: 100%;
+  height: 600px;
+  position: fixed;
+  z-index: -3;
+}
+.beach {
+  background-color: sandybrown;
+  position: fixed;
+  width: 100%;
+  height: 800px;
+  z-index: -4;
+}*/
+p {
+color: black;
+// background: linear-gradient(90deg, yellow, orange);
+text-align: center;
+padding: 20px;
+border-radius: 20px;
+position: ;
+}
+h1 {
+  color:teal;
+  background-color: ;
+  font-family: cursive;
+  text-align: center;
+}
+h2{
+  color: tan;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+}
+h3{
+  color: ;
+  background-color: ;
+  font-family: ;
+}
+a {
+  background-color: ;
+  text-decoration: none;
+}
+a:link {
+  color: black;
+}
+a:visited {
+  color: cornflowerblue;
+}
+a:hover {
+  color: red;
+}
+li {
+  background-color: ;
+  border-radius: 10px;
+  font-family: ;
+  font-size: large;
+}
+ul{
+  list-style-type: none;
+}
+.batman {
+  border: solid;
+  border-radius: 100px;
+  height: 200px;
+  width: 200px;
+  margin: 0 50px 0 50px;
+}
+.playstation {
+  color: blue;
+}
+.xbox {
+  color: green;
+}
+.nintendo {
+  color: red;
+}
+#logobox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.logo {
+  height: 100px;
+  width: 100px;
+  background-size: cover;
+  background-position: center;
+  transition: background-image .5s ease;
+}
+#logo1 {
+  background-image: url(https://cdn.icon-icons.com/icons2/2845/PNG/512/playstation_logo_icon_181403.png);
+}
+#logo1:hover {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Playstation_logo_colour.svg/2560px-Playstation_logo_colour.svg.png);
+  height: ;
+  width: ;
+}
+#logo2 {
+  background-image: url(https://logowik.com/content/uploads/images/xbox-black4601.jpg);
+}
+#logo2:hover {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Xbox_one_logo.svg/2048px-Xbox_one_logo.svg.png);
+}
+#logo3 {
+  background-image: url(https://i.ebayimg.com/images/g/bAUAAOSwPRFfqxHY/s-l1200.webp);
+}
+#logo3:hover {
+  background-image: url(https://seeklogo.com/images/N/nintendo-switch-logo-38D4F5C7E7-seeklogo.com.png);
+}
+.games .movies .shows{
+  font-weight: bold;
+}
+.pokemon{
+  background-color: black;
+  padding: 10px 10px 10px 10px;
+  height: 100px;
+  width: 100px;
+  border: 50px orange;
+}
+.gamepic {
+  width: 200px;
+  height: 100px;
+}
+.xmen97 {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  margin: 30px;
+  float: right;
+}
+.banger{
+  font-style:italic;
+  font-weight: bold;
+}
+.finish {
+  text-decoration: line-through;
+}
+table, th, td{
+  border: black solid 4px;
+  border-radius: px;
+  background-color: beige;
+  border-collapse: collapse;
+  border-color: ;
+  border-style: ;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+}
+table{
+  border-spacing: px;
+}
+td{
+  border: solid 2px;
+  border-radius: 0px;
+}
+caption{
+  font-size: 30px;
+}
+tr:hover {
+  background-color: cornflowerblue;
+}

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Cinema</title>
+    <link rel="stylesheet"
+   href="style.css">
+    <meta charset="utf-8" name="viewport"
+   content="width=device-width, initial-scale=1.0">
+ </head>
+ <body>
+    <nav id="navbar">
+      <ul>
+        <li style="color: white">Menu</li>
+        <li><a
+     href="/index.html">Home</a></li>
+        <li><a
+     href="/gaming.html">Gaming</a></li>
+        <li><a
+     href="/streaming.html">Streaming</a></li>
+        <li><a
+     href="/music.html">Music</a></li>
+        <li><a
+     href="/ratings.html">Ratings</a></li>
+      </ul>
+    </nav>
+    <div class="box">
+      <a
+   href="https://www.regmovies.com/">Regal</a>
+    <div class="item">
+      <ul>
+        <li class="movieSeen">Mean Girls</li>
+        <details>
+          <summary>Review</summary>
+          <p>Honestly did what it needed to do.
+     Pretty much copy and paste and added
+     songs. Renee Rapp was great as
+     Regina George. They cut out a couple
+     jokes like the gym teacher and
+     student hooking up which is very
+     understandable. Tina fey strikes
+     again.</p>
+        </details>
+        <select id="meanGirls">
+          <option selected disabled>How was it?</option>
+          <option>Flawless</option>
+          <option>Great</option>
+          <option>Good</option>
+          <option>Bad</option>
+          <option>Awful</option>
+        </select>
+        <button onclick="meanGirls()">Submit</button>
+        <p id="meanGirlsRating">pretty fetch</p>
+        <li class="movieSeen">Arglye</li>
+        <details>
+          <summary>Review</summary>
+          <p>Watched this on Apple TV+ and it was way better than the streets said it was. IGN was hating giving it a 4 out of 10. Honestly I just think I'm better at managing my expectations for movies. The action was good. Story was solid. I'm only kind of annoyed I still haven't watched the Kingsman movies and the end did reveal Argyle is a part of that universe. Now I really need to watch that series. I watched half of the first one, had togo somewhere and just never went back to it.</p>
+        </details>
+        <select id="argyle">
+          <option selected disabled>How was it?</option>
+          <option>Flawless</option>
+          <option>Great</option>
+          <option>Good</option>
+          <option>Bad</option>
+          <option>Awful</option>
+        </select>
+        <button onclick="argyle()">Submit</button>
+        <p id="argyleRating"></p>
+        <li class="movieSeen">Madame Web</li>
+        <details>
+          <summary>Review</summary>
+          <p>The movie tells nothing about the
+     villain other than he wants to kill
+     these shorties because he keeps
+     dreaming they’re gonna kill him in
+     future. Why they’re gonna kill him?
+     No clue. But they’re apparently
+     gonna destroy him and everything he
+     built. What he built? Beats me. How
+     he built it? Not important. But he
+     does have vague spider powers and a
+     pre-spiderman spiderman-style suit
+     and I guess can poison people with
+     his hands because he stole a spider.
+     Whether it bit him or not is
+     irrelevant. This nigga seduces an
+     NSA agent that obviously has the
+     code he needs for their 2003 facial
+     recognition software that can find
+     anybody anywhere based off his
+     description from his dreams aged
+     down 10 years by his assistant that
+     can somehow use this software
+     effortlessly. And I guess he can
+     decide if non spider people can see
+     him because on the train scene one
+     of the girls asked if anybody else
+     can see him since nobody is reacting
+     to this nigga crawling on the
+     fucking ceiling. After that anybody
+     can see him. They beat this nigga up
+     with fireworks because at no point
+     in the movie do any of them get
+     their powers.
+     
+     All the future spiderwomen are
+     pseudo orphans so you know heartfelt
+     we have something in common scene.
+     Early in the movie Ben tells Cassie
+     he’s dating someone so she asks him
+     her name and he just looks at her
+     blank because they obviously have
+     some inside joke. Like why do that
+     scene if he’s not gonna say May.
+     Mary Parker is pregnant so Cassie
+     goes to her baby shower even though
+     they don’t know each other and they
+     play a guess the baby name game and
+     no one ever says Peter. Again why?
+     Richard Parker is on some business
+     trip because mysterious. Peter being
+     born in 2003 clearly can’t be
+     McGuire Garfield or holland so wtf.
+     Cassie gets her clairvoyance powers
+     after a near death drowning
+     experience. Then falls into the
+     ocean again after the final fight
+     and becomes blind and paralyzed. I
+     guess maybe from fireworks and
+     falling sheet metal. After deciding
+     she has to protect these girls from
+     being hunted she leaves them with
+     Ben and goes to the Peruvian jungle
+     her mother was killed in and meets
+     the spider-people that saved her in
+     birth. Dude tells her in the clear
+     English he’d been speaking in that
+     evil spider guy is cursed because he
+     stole a spider that’s actually still
+     alive after 30 years. </p>
+        </details>
+        <select id="madameWeb">
+          <option selected disabled>How was it?</option>
+          <option>Flawless</option>
+          <option>Great</option>
+          <option>Good</option>
+          <option>Bad</option>
+          <option>Awful</option>
+        </select>
+        <button onclick="madameWeb()">Submit</button>
+        <p id="madameWebRating">What a stinker. Good lord does Sony
+    have any idea what they're doing?</p>
+        <li class="movieSeen">Dune 2</li>
+        <details>
+        <summary>Review</summary>
+        <p>
+    What a ride. Can't wait to rewatch. Shoutout to the lisan al-gaib and the whole set. Niggas really was putting on for the hood. Fuck all them Harkonnen niggas they not fucking with my fremen niggas. Seriously a master class in cinema. Zendaya and Timmy were in bag but Austin and Javier stole the show. </p>
+        </details>
+        <select id="dune">
+          <option selected disabled>How was it?</option>
+          <option>Flawless</option>
+          <option>Great</option>
+          <option>Good</option>
+          <option>Bad</option>
+          <option>Awful</option>
+        </select>
+        <button onclick="dune()">Submit</button>
+        <p id="duneRating"></p>
+        <li class="movieSeen">Kung Fu Panda 4</li>
+        <details>
+          <summary>Review</summary>
+          <p><!--write review--></p>
+        </details>
+        <select id="kungFu">
+          <option selected disabled>How was it?</option>
+          <option>Flawless</option>
+          <option>Great</option>
+          <option>Good</option>
+          <option>Bad</option>
+          <option>Awful</option>
+        </select>
+        <button onclick="kungFu()">Submit</button>
+        <p id="kungFuRating"></p>
+        <li class="movieSeen">Ghostbusters</li>
+        <details>
+          <summary>Review</summary>
+          <p><!--write review--></p>
+        </details>
+        <select id="ghostbusters">
+          <option selected disabled>How was it?</option>
+          <option>Flawless</option>
+          <option>Great</option>
+          <option>Good</option>
+          <option>Bad</option>
+          <option>Awful</option>
+        </select>
+        <button onclick="ghostbusters()">Submit</button>
+        <p id="ghostbustersRating"></p>
+        <li class="movieSeen">Kong X Godzilla The New Empire</li>
+        <details>
+          <summary>Review</summary>
+          <p><!--write review--></p>
+        </details>
+        <select id="kongVs">
+          <option selected disabled>How was it?</option>
+          <option>Flawless</option>
+          <option>Great</option>
+          <option>Good</option>
+          <option>Bad</option>
+          <option>Awful</option>
+        </select>
+        <button onclick="kongVs()">Submit</button>
+        <p id="kongVsRating"></p>
+        <li class="movieSeen">Civil War</li>
+        <details>
+          <summary>Review</summary>
+          <p><!--write review--></p>
+        </details>
+        <select id="civilWar">
+          <option selected disabled>How was it?</option>
+          <option>Flawless</option>
+          <option>Great</option>
+          <option>Good</option>
+          <option>Bad</option>
+          <option>Awful</option>
+        </select>
+        <button onclick="civilWar()">Submit</button>
+        <p id="civilWarRating"></p>
+        <li class="movieSeen">Planet of the Apes</li>
+        <p> R.I.P. my boy Caesar</p>
+        <details>
+          <summary>Review</summary>
+          <p><!--write review--></p>
+        </details>
+        <select id="planetOf">
+          <option selected disabled>How was it?</option>
+          <option>Flawless</option>
+          <option>Great</option>
+          <option>Good</option>
+          <option>Bad</option>
+          <option>Awful</option>
+        </select>
+        <button onclick="planetOf()">Submit</button>
+        <p id="planetOfRating"></p>
+        <li class="movieSeen">The Fall Guy</li>
+        <details>
+          <summary>Review</summary>
+          <p><!--write review--></p>
+        </details>
+        <select id="theFall">
+          <option selected disabled>How was it?</option>
+          <option>Flawless</option>
+          <option>Great</option>
+          <option>Good</option>
+          <option>Bad</option>
+          <option>Awful</option>
+        </select>
+        <button onclick="theFall()">Submit</button>
+        <p id="theFallRating"></p>
+        <li>If 5/17</li>
+        <li>Strangers 5/17</li>
+        <li class="movieSeen">Bad Boys 4 6/14</li>
+        <details>
+          <summary>Review</summary>
+          <p><!--write review--></p>
+        </details>
+        <select id="badBoys">
+          <option selected disabled>How was it?</option>
+          <option>Flawless</option>
+          <option>Great</option>
+          <option>Good</option>
+          <option>Bad</option>
+          <option>Awful</option>
+        </select>
+        <button onclick="badBoys()">Submit</button>
+        <p id="badBoysRating"></p>
+        <li class="movieSeen">A Quiet Place Prequel</li>
+        <details>
+          <summary>Review</summary>
+          <p><!--write review--></p>
+        </details>
+        <select id="quietPlace">
+          <option selected disabled>How was it?</option>
+          <option>Flawless</option>
+          <option>Great</option>
+          <option>Good</option>
+          <option>Bad</option>
+          <option>Awful</option>
+        </select>
+        <button onclick="quietPlace()">Submit</button>
+        <p id="quietPlaceRating"></p>
+        <li>Despicalble Me 4 7/3</li>
+        <li>Deadpool 3 7/26
+        </li> <img
+    style="height: 100px;width: 200px; margin: 10px;"
+    src="https://variety.com/wp-content/uploads/2024/01/F0r6GbQacAUng-4-1.webp">
+        <li>Borderlands</li>
+        <li>Blink Twice 8/23</li>
+        <li>Kraven 8/30</li>
+        <p> Why? Just why man?</p>
+        <li>Beetlejuice 2 9/6</li>
+        <li>Transformers One 9/13</li>
+        <li>Joker 2 10/4</li>
+        <li>Smile 2 10/18</li>
+        <li>Venom 3 10/25</li>
+        <li>Gladiator 2 11/22</li>
+        <li>Moana 2 11/27</li>
+        <li>Lord of the Rings (?????) 12/13</li>
+        <li>Sonic 3 12/20</li>
+        <li>Mufasa 12/20</li>
+        <br>
+        <li>Cap4 2/14/25</li>
+        <li>Thunderbolts 5/2/25</li>
+        <li>Jurassic Park 5/2/25</li>
+        <li>Superman 7/11/25</li>
+        <li>Fantastic Four 7/25/25</li>
+        <li>Zootopia 11/26/25</li>
+        <li>Avatar 3 12/19/25</li>
+      </ul>
+      <button onclick="movieCount()">Count</button>
+      <p id="moviesSeen"></p>
+      <p id="bestMovie"></p>
+      <a href="#navbar">Back to Top</a>
+    </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

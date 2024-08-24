@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-US">
+ <head>
+  <title>Gaming</title>
+  <link rel="stylesheet"
+   href="style.css">
+  <meta charset="utf-8" name="viewport"
+   content="width=device-width, initial-scale=1.0">
+ </head>
+ <body>
+  <nav id="navbar">
+    <ul>
+      <li style="color: white">Menu</li>
+      <li><a href="/index.html">Home</a></li>
+      <li><a
+     href="/cinema.html">Cinema</a></li>
+      <li><a
+     href="/streaming.html">Streaming</a></li>
+      <li><a
+     href="/music.html">Music</a></li>
+      <li><a
+     href="/ratings.html">Ratings</a></li>
+    </ul>
+  </nav>
+  <div class="box">
+    <a style="font-size: large;"
+   href="https://www.ign.com/playlist/kingnudie"
+   title="Open IGN">
+   IGN</a><br>
+   <div class="item">
+    <h2>Now Playing</h2>
+    <ul class="list">
+      <li class="gamePlayed"> <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pokémon_logo.svg/1280px-International_Pokémon_logo.svg.png"
+      alt="Pokemon Logo"
+      height="100px"><br>
+        <a
+      href="https://bulbapedia.bulbagarden.net/wiki/Lucario_(Pokémon)">
+        <img class="pokemon"
+       style="border: solid beige;"
+       src="https://ssb.wiki.gallery/images/thumb/0/08/Lucario_SSBU.png/500px-Lucario_SSBU.png"
+       alt="Lucario"></a>
+        <a
+      href="https://bulbapedia.bulbagarden.net/wiki/Dragonite_(Pokémon)">
+        <img class="pokemon"
+       style="border: solid orange;"
+       src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/149.png"
+       alt="Dragonite"></a>
+        <a
+      href="https://bulbapedia.bulbagarden.net/wiki/Raichu_(Pokémon)">
+        <img class="pokemon"
+       style="border: solid yellow;"
+       src="https://static.pokemonpets.com/images/monsters-images-300-300/26-Raichu.webp"
+       alt="Raichu"></a><br>
+        <a
+      href="https://bulbapedia.bulbagarden.net/wiki/Quaquaval_(Pokémon)"><img
+       class="pokemon"
+       style="border: solid lightblue;"
+       src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/914.png"
+       alt="Quaquaval"></a>
+        <a
+      href="https://bulbapedia.bulbagarden.net/wiki/Garchomp_(Pokémon)">
+        <img class="pokemon"
+       style="border: solid red;"
+       src="https://img.pokemondb.net/sprites/sun-moon/shiny/garchomp-f.png"
+       alt="Garchomp"></a>
+        <a
+      href="https://bulbapedia.bulbagarden.net/wiki/Charizard_(Pokémon)">
+        <img class="pokemon"
+       style="border: solid forestgreen;"
+       src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png"
+       alt="Charizard"></a>
+      </li>
+      <details>
+        <summary>Review</summary>
+        <p></p>
+      </details>
+      <select id="pokemon">
+        <option selected disabled>How was it?</option>
+          <option>Flawless</option>
+          <option>Great</option>
+          <option>Good</option>
+          <option>Bad</option>
+          <option>Awful</option>
+      </select>
+          <button onclick="pokemon()">Submit</button>
+          <p id="pokemonRating"></p>
+      <li class="gamePlayed">Palworld aka Pokemon Turnt Edition</li>
+      <details>
+        <summary>Review</summary>
+        <p></p>
+      </details>
+      <select id="palworld">
+        <option selected disabled>How was it?</option>
+          <option>Flawless</option>
+          <option>Great</option>
+          <option>Good</option>
+          <option>Bad</option>
+          <option>Awful</option>
+      </select>
+          <button onclick="palworld()">Submit</button>
+          <p id="palworldRating"></p>
+      <li class="gamePlayed">Starfield</li>
+      <details>
+        <summary>Review</summary>
+        <p></p>
+      </details>
+      <select id="starfield">
+        <option selected disabled>How was it?</option>
+          <option>Flawless</option>
+          <option>Great</option>
+          <option>Good</option>
+          <option>Bad</option>
+          <option>Awful</option>
+      </select>
+          <button onclick="starfield()">Submit</button>
+          <p id="starfieldRating"></p>
+    </ul>
+    <h2>Finished</h2>
+    <ul>
+      <li class="gamePlayed">Spider-Man 2</li>
+      <details>
+        <summary>Review</summary>
+        <p></p>
+      </details>
+      <select id="spiderMan">
+        <option selected disabled>How was it?</option>
+          <option>Flawless</option>
+          <option>Great</option>
+          <option>Good</option>
+          <option>Bad</option>
+          <option>Awful</option>
+      </select>
+          <button onclick="spiderMan()">Submit</button>
+          <p id="spiderManRating"></p>
+      <li class="gamePlayed">God of War Ragnarok</li>
+      <details>
+        <summary>Review</summary>
+        <p></p>
+      </details>
+      <select id="godOf">
+        <option selected disabled>How was it?</option>
+          <option>Flawless</option>
+          <option>Great</option>
+          <option>Good</option>
+          <option>Bad</option>
+          <option>Awful</option>
+      </select>
+          <button onclick="godOf()">Submit</button>
+          <p id="godOfRating"></p>
+      <li class="gamePlayed">Hogwarts Legacy</li>
+      <details>
+        <summary>Review</summary>
+        <p></p>
+      </details>
+      <select id="hogwarts">
+        <option selected disabled>How was it?</option>
+          <option>Flawless</option>
+          <option>Great</option>
+          <option>Good</option>
+          <option>Bad</option>
+          <option>Awful</option>
+      </select>
+          <button onclick="hogwarts()">Submit</button>
+          <p id="hogwartsRating"></p>
+      <li class="gamePlayed">Final Fantasy 7 Rebirth</li><img
+      src="https://ftw.usatoday.com/wp-content/uploads/sites/90/2022/06/FF7R_INTERGRADE_March_Screenshot_02.jpg?w=1000&h=600&crop=1" alt="cloud vs sephiroth" class="gamepic">
+      <details>
+        <summary>Review</summary>
+        <p></p>
+      </details>
+      <select id="finalFantasy">
+        <option selected disabled>How was it?</option>
+          <option>Flawless</option>
+          <option>Great</option>
+          <option>Good</option>
+          <option>Bad</option>
+          <option>Awful</option>
+      </select>
+          <button onclick="finalFantasy()">Submit</button>
+          <p id="finalFantasyRating"></p>
+    </ul>
+    <h2>Coming Soon</h2>
+    <ul class="list">
+      <li>Rise of the Ronin</li>
+      <li>NCAA Football 25 7/16</li>
+      <li>Star Wars Outlaws 8/30</li>
+      <li>Tenkaichi 4 10/1*<br><img
+      src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/08/Goku-vs-Vegeta-Dragon-Ball-Super-Super-Hero.jpg" alt="goku vs vegeta" class="gamepic"></li>
+      <li>Assassin's Creed Shadows 11/25</li>
+      <li>Wolverine</li>
+      <li>Ninja Turtles The Last Ronin</li>
+      <li>GTA VI</li>
+    </ul>
+    <button onclick="gameCount()">Count</button>
+    <p id="gamesPlayed"></p>
+    <p id="bestGame"></p>
+    <a href="#navbar">Back to Top</a>
+   </div>
+    </div>
+    <script src="script.js"></script>
+  </body>    
+</html>
