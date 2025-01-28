@@ -8,23 +8,24 @@
    content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <nav id="navbar">
+    <nav class="navbar">
       <ul>
         <li style="color: white">Menu</li>
         <li><a
-     href="index.html">Home</a></li>
+        href="index.html">Home</a></li>
         <li><a
-     href="gaming.html">Gaming</a></li>
+        href="gaming.html">Gaming</a></li>
         <li><a
-     href="cinema.html">Cinema</a></li>
+        href="cinema.html">Cinema</a></li>
         <li><a
-     href="streaming.html">Streaming</a></li>
+        href="streaming.html">Streaming</a></li>
         <li><a
-     href="music.html">Music</a></li>
+        href="music.html">Music</a></li>
       </ul>
     </nav>
+
     <div class="box">
-      <div class="item">
+      <div class="item2">
         <table style="width:100%;">
           <caption>Gaming</caption>
           <tr>
@@ -47,130 +48,224 @@
             <td class="gamePlayed">Spider-Man 2 (2023)</td>
             <td>8/10</td>
           </tr>
-   <tr>
-    <td class="gamePlayed">God Of War Ragnorok (2022)</td>
-    <td>10/10</td>
-   </tr>
-   <tr>
-    <td class="gamePlayed">Hogwarts Legacy (2023)</td>
-    <td>10/10</td>
-   </tr>
-   <tr>
-    <td class="gamePlayed">Final Fantasy 7 Rebirth</td>
-    <td>9/10</td>
-   </tr>
-  </table>
-  <p id="gamesPlayed"></p>
-  <p id="bestGame"></p>
-  <br>
-  <table>
-   <caption>Cinema</caption>
-   <tr>
-    <th>Movie</th>
-    <th>Rating</th>
-   </tr>
-   <tr>
-    <td class="movieSeen">Mean Girls</td>
-    <td id="meanGirlsRating">8/10</td>
-   </tr>
-   <tr>
-    <td class="movieSeen">Madame Web</td>
-    <td>
-     4/10</td>
-   </tr>
-   <tr>
-    <td class="movieSeen"> Dune 2</td>
-    <td> 9/10 </td>
-   </tr>
-   <tr>
-    <td class="movieSeen">Ghostbusters</td>
-    <td>6/10</td>
-   </tr>
-   <tr>
-    <td class="movieSeen">The Boy and The Heron</td>
-    <td>?/10</td>
-   </tr>
-   <tr>
-    <td class="movieSeen">Godzilla X Kong</td>
-    <td>8/10</td>
-   </tr>
-   <tr>
-    <td class="movieSeen">Kung Fu Panda</td>
-    <td>7/10</td>
-   </tr>
-   <tr>
-    <td class="movieSeen">Monkey Man</td>
-    <td>9/10</td>
-   </tr>
-  </table>
-  <p id="moviesSeen"></p>
-  <p id="bestMovie"></p>
-  <br>
-  <table>
-   <caption>Streaming</caption>
-   <tr>
-    <th>Show</th>
-    <th>Rating</th>
-    <th>Service</th>
-   </tr>
-   <tr>
-    <td class="showSeen">Percy Jackson</td>
-    <td>8/10</td>
-    <td>Disney+</td>
-   </tr>
-   <tr>
-    <td class="showSeen">Mr & Mrs Smith</td>
-    <td>7/10</td>
-    <td>Amazon Prime</td>
-   </tr>
-   <tr>
-    <td class="showSeen">The Vince Staples Show</td>
-    <td>9.5/10</td>
-    <td>Netflix</td>
-   </tr>
-   <tr>
-    <td class="showSeen">Curb Your Enthusiasm</td>
-    <td>9/10</td>
-    <td>HBO Max</td>
-   </tr>
-   <tr>
-    <td class="showSeen">Abbott Elementary</td>
-    <td>8/10</td>
-    <td>Hulu</td>
-   </tr>
-   <tr>
-    <td class="showSeen">Ninja Kamui</td>
-    <td>6/10</td>
-    <td>HBO Max</td>
-   </tr>
-   <tr>
-    <td class="showSeen">Avatar</td>
-    <td>8/10</td>
-    <td>Netflix</td>
-   </tr>
-   <tr>
-    <td class="showSeen">Invincible</td>
-    <td>8/10</td>
-    <td>Amazon Prime</td>
-   </tr>
-   <tr>
-    <td class="showSeen">Xmen 97</td>
-    <td>10/10</td>
-    <td>Disney+</td>
-   </tr>
-   <tr>
-    <td class="showSeen">Fallout</td>
-    <td>10/10</td>
-    <td>Amazon</td>
-    </tr>
-  </table>
-  <p id="showsSeen"></p>
-  <p id="bestShow"></p>
-  </div>
-  <br>
-  <footer>
-   <a href="#navbar">Back to top</a>
-  </footer>
+          <tr>
+            <td class="gamePlayed">God Of War Ragnorok (2022)</td>
+            <td>10/10</td>
+          </tr>
+          <tr>
+            <td class="gamePlayed">Hogwarts Legacy (2023)</td>
+            <td>10/10</td>
+          </tr>
+          <tr>
+            <td class="gamePlayed">Final Fantasy 7 Rebirth</td>
+            <td>9/10</td>
+          </tr>
+        </table>
+
+        <p id="gamesPlayed"></p>
+        <p id="bestGame"></p>
+        
+        <br>
+
+        <table>
+          <caption>Cinema</caption>
+          <tr>
+            <th>Movie</th>
+            <th>Rating</th>
+          </tr>
+          <tr>
+            <td class="movieSeen">Mean Girls</td>
+            <td id="meanGirlsRating">8/10</td>
+          </tr>
+          <tr>
+            <td class="movieSeen">Wonka</td>
+            <td id="wonkaRating"></td>
+          </tr>
+          <tr>
+            <td class="movieSeen">The Beekeeper</td>
+            <td id="beekeeperRating"></td>
+          </tr>
+          <tr>
+            <td class="movieSeen">American Fiction</td>
+            <td id="americanFictionRating"></td>
+          </tr>
+          <tr>
+            <td class="movieSeen">Argyle</td>
+            <td id="argyleRating"></td>
+          </tr>
+          <tr>
+            <td class="movieSeen">Madame Web</td>
+            <td>4/10</td>
+          </tr>
+          <tr>
+            <td class="movieSeen">Dune 2</td>
+            <td>9/10</td>
+          </tr>
+          <tr>
+            <td class="movieSeen">Kung Fu Panda 4</td>
+            <td id="kungFuRating"></td>
+          </tr>
+          <tr>
+            <td class="movieSeen">Ghostbusters</td>
+            <td>6/10</td>
+          </tr>
+          <tr>
+            <td class="movieSeen">The Boy and The Heron</td>
+            <td>?/10</td>
+          </tr>
+          <tr>
+            <td class="movieSeen">Godzilla X Kong</td>
+            <td>8/10</td>
+          </tr>
+          <tr>
+            <td class="movieSeen">Monkey Man</td>
+            <td>9/10</td>
+          </tr>
+          <tr>
+            <td class="movieSeen">Civil War</td>
+            <td id="civilWarRating"></td>
+          </tr>
+          <tr>
+            <td class="movieSeen">Planet Of The Apes</td>
+            <td id="planetOfRating"></td>
+          </tr>
+          <tr>
+            <td class="movieSeen">The Fall Guy</td>
+            <td id="theFallRating"></td>
+          </tr>
+          <tr>
+            <td class="movieSeen">Watchers</td>
+            <td id="watchersRating"></td>
+          </tr>
+          <tr>
+            <td class="movieSeen">Bad Boys 4</td>
+            <td id="badBoysRating"></td>
+          </tr>
+          <tr>
+            <td class="movieSeen">Inside Out 2</td>
+            <td id="insideOutRating"></td>
+          </tr>
+          <tr>
+            <td class="movieSeen">A Quiet Place Prequel</td>
+            <td id="quietPlaceRating"></td>
+          </tr>
+          <tr>
+            <td class="movieSeen">Despicable Me 4</td>
+            <td id="despicableRating"></td>
+          </tr>
+          <tr>
+            <td class="movieSeen">Deadpool 3</td>
+            <td id="deadpoolRating"></td>
+          </tr>
+          <tr>
+            <td class="movieSeen">Blink Twice</td>
+            <td id="blinkTwiceRating"></td>
+          </tr>
+          <tr>
+            <td class="movieSeen">Speak No Evil</td>
+            <td id="speakNoEvilRating"></td>
+          </tr>
+          <tr>
+            <td class="movieSeen">Megalopolis</td>
+            <td id="megalopolisRating"></td>
+          </tr>
+          <tr>
+            <td class="movieSeen">Transformers One</td>
+            <td id="transformersRating"></td>
+          </tr>
+          <tr>
+            <td class="movieSeen">Joker: Folie Duex</td>
+            <td id="jokerRating"></td>
+          </tr>
+          <tr>
+            <td class="movieSeen">Smile 2</td>
+            <td id="smileRating"></td>
+          </tr>
+          <tr>
+            <td class="movieSeen">Piece By Piece</td>
+            <td id="pieceByPieceRating"></td>
+          </tr>
+          <tr>
+            <td class="movieSeen">Venom</td>
+            <td id="venomRating"></td>
+          </tr>
+
+        </table>
+
+        <p id="moviesSeen"></p>
+        <p id="bestMovie"></p>
+        
+        <br>
+
+        <table>
+          <caption>Streaming</caption>
+          <tr>
+            <th>Show</th>
+            <th>Rating</th>
+            <th>Service</th>
+          </tr>
+          <tr>
+            <td class="showSeen">Percy Jackson</td>
+            <td>8/10</td>
+            <td>Disney+</td>
+          </tr>
+          <tr>
+            <td class="showSeen">Mr & Mrs Smith</td>
+            <td>7/10</td>
+            <td>Amazon Prime</td>
+          </tr>
+          <tr>
+            <td class="showSeen">The Vince Staples Show</td>
+            <td>9.5/10</td>
+            <td>Netflix</td>
+          </tr>
+          <tr>
+            <td class="showSeen">Curb Your Enthusiasm</td>
+            <td>9/10</td>
+            <td>HBO Max</td>
+          </tr>
+          <tr>
+            <td class="showSeen">Abbott Elementary</td>
+            <td>8/10</td>
+            <td>Hulu</td>
+          </tr>
+          <tr>
+            <td class="showSeen">Ninja Kamui</td>
+            <td>6/10</td>
+            <td>HBO Max</td>
+          </tr>
+          <tr>
+            <td class="showSeen">Avatar</td>
+            <td>8/10</td>
+            <td>Netflix</td>
+          </tr>
+          <tr>
+            <td class="showSeen">Invincible</td>
+            <td>8/10</td>
+            <td>Amazon Prime</td>
+          </tr>
+          <tr>
+            <td class="showSeen">Xmen 97</td>
+            <td>10/10</td>
+            <td>Disney+</td>
+          </tr>
+          <tr>
+            <td class="showSeen">Fallout</td>
+            <td>10/10</td>
+            <td>Amazon</td>
+            </tr>
+        </table>
+
+        <p id="showsSeen"></p>
+        <p id="bestShow"></p>
+      </div>
+
+        <br>
+
+      <footer>
+        <a href="#navbar">Back to top</a>
+      </footer>
+
   <script src="script.js"></script>
  </body>
 </html>
