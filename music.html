@@ -6,30 +6,265 @@
    href="style.css">
   <meta charset="utf-8" name="viewport"
    content="width=device-width, initial-scale=1.0">
+   <style>
+    #musicbox {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      justify-content: space-evenly;
+      row-gap: 50px;
+    }
+    .album, .single {
+      height: 400px;
+      width: 220px;
+      border: solid black 2px;
+    }
+
+    .coverart {
+      height: 200px;
+      padding-left: 10px;
+      padding-top: 10px;
+    }
+
+   </style>
  </head>
  <body>
-  <nav id="navbar">
-  <ul>
-    <li style="color: white">Menu</li>
-   <li> <a
-     href="index.html">Home</a></li>
-   <li> <a
-     href="gaming.html">Gaming</a></li>
-   <li> <a
-     href="cinema.html">Cinema</a></li>
-   <li> <a
-     href="streaming.html">Streaming</a>
-   </li>
-   <li> <a
-     href="ratings.html">Ratings</a>
-   </li>
-  </ul>
-  </nav>
-  <div class="box">
-  <p>ScHoolboy back. Thats a really good album and idk if niggas are talking about it enough. Q redeemed himself after dropping the only bad Black Hippy album with that Crash Talk.</p>
-  <p>Im gon get into this Kendrick and Drake beef asap, I just need to gather my thoughts. Really wish I woulda doc'd it in real time but whatever at this point. Shit going crazy though.</p>
-  <p>Benny dropped a tape I kinda wanna hear. He fell off around that Hit-Boy album he had but i still respect his pen. Roc Marci new shit cool, need to listen a few more times. Billie coming so I'm expecting some grammy shit outta her. Also Bankreau dropping before the summer which is a very pleasant surprise. Its still Fly Dot U where dreams come true.</p>
-  </div>
+    <nav id="navbar">
+      <ul>
+        <li style="color: white">Menu</li>
+        <li> <a
+        href="index.html">Home</a></li>
+        <li> <a
+        href="gaming.html">Gaming</a></li>
+        <li> <a
+        href="cinema.html">Cinema</a></li>
+        <li> <a
+        href="streaming.html">Streaming</a></li>
+        <li><a href="sports.html">Sports</a></li>
+        <li><a href="comics.html">Comics</a></li>
+        <li> <a
+        href="ratings.html">Ratings</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="musicbox">
+      <div class="album">
+        <img src="/Gauntlet/images/albums/bluelips.jpeg" alt="Blue Lips Album Cover" class="coverart">
+        <h3>Blue Lips</h3>
+        <h4>Schoolboy Q</h4>
+        <h5>⏯️</h5>
+        <p id="nowPlayingSchoolboy"></p>
+      </div>
+
+      <div class="album">
+        <img src="/Gauntlet/images/albums/wedonttrustyou.jpeg" alt="Album Cover" class="coverart">
+        <h3>We Dont Trust You</h3>
+        <h4>Future & Metro Boomin</h4>
+        <h5>⏯️</h5>
+        <p id="nowPlayingFuture"></p>
+      </div>
+
+      <div class="album">
+        <img src="/Gauntlet/images/albums/mightdeletelater.jpeg" alt="Album Cover" class="coverart">
+        <h3>Might Delete Later</h3>
+        <h4>J. Cole</h4>
+        <h5>⏯️</h5>
+        <p id="nowPlayingCole"></p>
+      </div>
+
+      <div class="single">
+        <img src="/Gauntlet/images/albums/pushups.jpeg" alt="Cover Art" class="coverart">
+        <h3>Push Ups</h3>
+        <h4>Drake</h4>
+      </div>
+
+      <div class="single">
+        <img src="/Gauntlet/images/albums/euphoria.jpeg" alt="Cover Art" class="coverart">
+        <h3>Euphoria</h3>
+        <h4>Kendrick Lamar</h4>
+      </div>
+
+      <div class="single">
+        <img src="/Gauntlet/images/albums/familymatters.jpeg" alt="Cover Art" class="coverart">
+        <h3>Family Matters</h3>
+        <h4>Drake</h4>
+      </div>
+
+      <div class="single">
+        <img src="/Gauntlet/images/albums/meetthegrahams.jpeg" alt="Cover Art" class="coverart">
+        <h3>meet the grahams</h3>
+        <h4>Kendrick Lamar</h4>
+      </div>
+
+      <div class="single">
+        <img src="/Gauntlet/images/albums/theheartpart6.jpeg" alt="Cover Art" class="coverart">
+        <h3>The Heart Part 6</h3>
+        <h4>Drake</h4>
+      </div>
+
+      <div class="single">
+        <img src="/Gauntlet/images/albums/notlikeus.jpeg" alt="Cover Art" class="coverart">
+        <h3>Not Like Us</h3>
+        <h4>Kendrick Lamar</h4>
+      </div>
+
+      <div class="album">
+        <img src="/Gauntlet/images/albums/everybodycantgo.jpeg" alt="Album Cover" class="coverart">
+        <h3>Everybody Can't Go</h3>
+        <h4>Benny the Butcher</h4>
+        <h5>⏯️</h5>
+        <p id="nowPlayingBenny"></p>
+      </div>
+
+      <div class="album">
+        <img src="/Gauntlet/images/albums/marciology.jpeg" alt="Album Cover" class="coverart">
+        <h3>Marciology</h3>
+        <h4>Roc Marciano</h4>
+        <h5>⏯️</h5>
+        <p id="nowPlayingRoc"></p>
+      </div>
+
+      <div class="album">
+        <img src="/Gauntlet/images/albums/hitmehardandsoft.jpeg" alt="Album Cover" class="coverart">
+        <h3>Hit Me Hard and Soft</h3>
+        <h4>Billie Eilish</h4>
+        <h5>⏯️</h5>
+        <p id="nowPlayingBillie"></p>
+      </div>
+
+      <div class="album">
+        <img src="/Gauntlet/images/albums/darktimes.jpeg" alt="Album Cover" class="coverart">
+        <h3>Dark Times</h3>
+        <h4>Vince Staples</h4>
+        <h5>⏯️</h5>
+        <p id="nowPlayingVince"></p>
+      </div>
+
+      <div class="album">
+        <img src="/Gauntlet/images/albums/whysomepeoplebemadatme.jpeg" alt="Album Cover" class="coverart">
+        <h3>Why Some People Be Mad At Me</h3>
+        <h4>Jerreau</h4>
+        <h5>⏯️</h5>
+        <p id="nowPlayingJerreau"></p>
+      </div>
+
+      <div class="album">
+        <img src="/Gauntlet/images/albums/hardstonepsycho.jpeg" alt="Album Cover" class="coverart">
+        <h3>Hardstone Psycho</h3>
+        <h4>Don Toliver</h4>
+        <h5>⏯️</h5>
+        <p id="nowPlayingDonT"></p>
+      </div>
+
+      <div class="album">
+        <img src="/Gauntlet/images/albums/gemini!.jpeg" alt="Album Cover" class="coverart">
+        <h3>Gemini!</h3>
+        <h4>Lucki</h4>
+        <h5>⏯️</h5>
+        <p id="nowPlayingLucki"></p>
+      </div>
+
+      <div class="album">
+        <img src="/Gauntlet/images/albums/johannsebastianbachlava.jpeg" alt="Album Cover" class="coverart">
+        <h3>Johann Sebastian Bachlava the Doctor</h3>
+        <h4>Action Bronson</h4>
+        <h5>⏯️</h5>
+        <p id="nowPlayingBronson"></p>
+      </div>
+
+      <div class="album">
+        <img src="/Gauntlet/images/albums/bandostone.jpeg" alt="Album Cover" class="coverart">
+        <h3>Bando Stone and The New World</h3>
+        <h4>Childish Gambino</h4>
+        <h5>⏯️</h5>
+        <p id="nowPlayingGambino"></p>
+      </div>
+
+      <div class="album">
+        <img src="/Gauntlet/images/albums/alligatorbites.jpeg" alt="Album Cover" class="coverart">
+        <h3>Alligator Bites Never Heal</h3>
+        <h4>Doechii</h4>
+        <h5>⏯️</h5>
+        <p id="nowPlayingDoechii"></p>
+      </div>
+
+      <div class="album">
+        <img src="/Gauntlet/images/albums/holeerth.jpeg" alt="Album Cover" class="coverart">
+        <h3>Hole Erth</h3>
+        <h4>Toro Y Moi</h4>
+        <h5>⏯️</h5>
+        <p id="nowPlayingToro"></p>
+      </div>
+
+      <div class="album">
+        <img src="/Gauntlet/images/albums/thekidthatdid.jpeg" alt="Album Cover" class="coverart">
+        <h3>The Kid That Did</h3>
+        <h4>Babyface Ray</h4>
+        <h5>⏯️</h5>
+        <p id="nowPlayingFace"></p>
+      </div>
+
+      <div class="album">
+        <img src="/Gauntlet/images/albums/thethiefnexttojesus.jpeg" alt="Album Cover" class="coverart">
+        <h3>The Thief Next to Jesus</h3>
+        <h4>KA</h4>
+        <h5>⏯️</h5>
+        <p id="nowPlayingKa"></p>
+      </div>
+
+      <div class="album">
+        <img src="/Gauntlet/images/albums/insillywetrust.jpeg" alt="Album Cover" class="coverart">
+        <h3>In Silly We Trust</h3>
+        <h4>Tisakorean</h4>
+        <h5>⏯️</h5>
+        <p id="nowPlayingTisa"></p>
+      </div>
+
+      <div class="album">
+        <img src="/Gauntlet/images/albums/onlineshoplifting.jpeg" alt="Album Cover" class="coverart">
+        <h3>Online Shoplifting</h3>
+        <h4>Chris Crack</h4>
+        <h5>⏯️</h5>
+        <p id="nowPlayingCrack"></p>
+      </div>
+
+      <div class="album">
+        <img src="/Gauntlet/images/albums/heavy.jpeg" alt="Album Cover" class="coverart">
+        <h3>Heavy</h3>
+        <h4>SiR</h4>
+        <h5>⏯️</h5>
+        <p id="nowPlayingSir"></p>
+      </div>
+
+      <div class="album">
+        <img src="/Gauntlet/images/albums/chromakopia.jpeg" alt="Album Cover" class="coverart">
+        <h3>Chromakopia</h3>
+        <h4>Tyler, The Creator</h4>
+        <h5>⏯️</h5>
+        <p id="nowPlayingTyler"></p>
+      </div>
+
+      <div class="album">
+        <img src="/Gauntlet/images/albums/youonlydie1nce.jpeg" alt="Album Cover" class="coverart">
+        <h3>You Only Die 1nce</h3>
+        <h4>Freddie Gibbs</h4>
+        <h5>⏯️</h5>
+        <p id="nowPlayingGibbs"></p>
+      </div>
+
+      <div class="album">
+        <img src="/Gauntlet/images/albums/stillpraying.jpeg" alt="Album Cover" class="coverart">
+        <h3>Still Praying</h3>
+        <h4>Westside Gunn</h4>
+        <h5>⏯️</h5>
+        <p id="nowPlayingGunn"></p>
+      </div>
+    </div>
+
+      <p>ScHoolboy back. Thats a really good album and idk if niggas are talking about it enough. Q redeemed himself after dropping the only bad Black Hippy album with that Crash Talk.</p>
+      <p>Im gon get into this Kendrick and Drake beef asap, I just need to gather my thoughts. Really wish I woulda doc'd it in real time but whatever at this point. Shit going crazy though.</p>
+      <p>Benny dropped a tape I kinda wanna hear. He fell off around that Hit-Boy album he had but i still respect his pen. Roc Marci new shit cool, need to listen a few more times. Billie coming so I'm expecting some grammy shit outta her. Also Bankreau dropping before the summer which is a very pleasant surprise. Its still Fly Dot U where dreams come true.</p>
+
   <script src="script.js"></script>
  </body>
  <footer>
