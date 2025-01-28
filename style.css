@@ -1,33 +1,32 @@
 body {
-  background: ;
-  color: ; 
-  font-family: courier new;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
+  /* font-family: courier new; */
 }
+
 nav {
-    display: flex;
-    justify-content: center;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    background-color: #333;
-    z-index: 1;
-    border-radius: ;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  z-index: 1;
 }
+
 nav li {
-    float: left;
-    padding: 10px;
-    text-decoration: none;
+  float: left;
+  padding: 10px;
+  text-decoration: none;
 }
+
 nav a {
   color: white;
   text-decoration: none;
 }
-nav.collapsed ul {
+
+/* nav.collapsed ul {
   display: none;
 }
+
 #dropdown-btn {
   display: none;
   background-color: black;
@@ -36,6 +35,7 @@ nav.collapsed ul {
   padding: 14px 20px;
   cursor: pointer;
 }
+
 #dropdown-menu {
   display: none;
   position: absolute;
@@ -44,13 +44,16 @@ nav.collapsed ul {
   background-color: black;
   z-index: 0;
 }
+
 #dropdown-menu ul {
   flex-direction: column;
 }
+
 #dropdown-menu li {
   border-bottom: 1px solid #444;
-}
-@media screen and (max-width: 480px) {
+} */
+
+/* @media screen and (max-width: 480px) {
  nav li {
   float: none;  
  }
@@ -72,103 +75,256 @@ nav.collapsed ul {
  #dropdown-btn {
   display: block;
  }
+} */
+
+.hidden {
+  display: none;
 }
+
 .box {
+  display: grid;
+  /* height: 100vh; */
+}
+
+/* index */
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://bairesdev.mo.cloudinary.net/blog/2023/09/How-Many-Web-Developers-in-the-World-1.jpg?tx=w_1920,q_auto");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  color: white;
+}
+
+#glove {
+  height: 530px;
+}
+
+.banner {
+  height: 40px;
+  border: solid black;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-image: url(/Gauntlet/images/blueStarField.jpg);
+  color: white;
+  background-attachment: fixed;
+}
+
+.banner-title {
+  font-family: fantasy; 
+}
+
+.banner:hover {
+  transform: scale(1.05);
+}
+
+.item {
+  border: solid black;
+  display: flex;
+  flex-direction: row;
+  height: 450px;
+  overflow: hidden;
+}
+
+.synopsis {
+  overflow-y: auto;
+  width: 50%;
+}
+
+
+.logobox {
   display: flex;
   flex-direction: column;
-  align-content: space-between;
+  justify-content: space-evenly;
+  width: 50%;
+  border: solid red;
   position: relative;
-  top: 70px;
+  overflow: hidden;
 }
-.item {
-  border: solid black 2px;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 60px;
-}
-/* .back {
+
+.logo {
+  height: 140px;
   width: 100%;
-  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-image .5s ease, transform 0.3s ease;
+  animation: slide 8s linear infinite;
+}
+
+/* Stop sliding on hover */
+.logo:hover {
+  animation-play-state: paused;  /* Pauses the animation on hover */
+  transform: scale(1.05);  /* Zoom effect on hover */
+}
+
+/* Keyframes for sliding the logo from left to right */
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);  /* Start outside the container on the right */
+  }
+  100% {
+    transform: translateX(100%);  /* Move to outside the container on the left */
+  }
+}
+
+.logoRow2 {
+  background-position: ;
+}
+
+#pslogo {
+  background-image: url(/Gauntlet/images/games/psLogo.webp);
+  /* height: 150px;
+  width: 150px; */
+}
+
+#pslogo:hover {
+  background-image: url(/Gauntlet/images/games/psLogoColor.png);
+  /* height: 150px;
+  width: 150px; */
+
+}
+
+#xblogo {
+  background-image: url(/Gauntlet/images/games/xbLogo.jpg);
+}
+
+#xblogo:hover {
+  background-image: url(/Gauntlet/images/games/xbLogoColor.png);
+}
+
+#nslogo {
+  background-image: url(/Gauntlet/images/games/nsLogo.png);
+}
+
+#nslogo:hover {
+  background-image: url(/Gauntlet/images/games/nsLogoColor.png);
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+
+}
+
+/* gaming */
+
+/* cinema */
+
+/* streaming */
+
+/* music */
+
+/* comics */
+
+#logos {
   display: grid;
-}
-.sun {
-  width: 200px;
-  height: 200px;
-  background-color: yellow;
-  position: fixed;
-  border-radius: 50%;
-  top: -50px;
-  left: -75px;
-  z-index: -1;
-}
-.sky {
-  background-color: skyblue;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
   width: 100%;
-  height: 200px;
-  position: fixed;
-  z-index: -2;
-  
 }
-.ocean {
-  background-color: aqua;
+
+#logos img {
   width: 100%;
-  height: 600px;
-  position: fixed;
-  z-index: -3;
+  height: auto;
 }
-.beach {
-  background-color: sandybrown;
-  position: fixed;
-  width: 100%;
-  height: 800px;
-  z-index: -4;
-}*/
+
+#logos h3 {
+  grid-column: span 2;
+  text-align: center;
+}
+.comicLogo {
+
+}
+.frontPage {
+
+}
+
+.comicStory {
+}
+
+.event {
+  display: grid;
+  grid-template-rows: auto 1fr; /* Row for h3 and a row for the content below */
+  grid-template-columns: 1fr 1fr; /* Two columns for img and comicStory */
+  gap: 10px; /* Adjust spacing between elements */
+  width: 100%; /* Ensure it spans the full width */
+}
+
+.event h3 {
+  grid-column: span 2; /* Stretch across both columns */
+  background-color: #f5f5f5; /* Optional: Add a background color for visibility */
+  text-align: center; /* Optional: Center-align text */
+  margin: 0; /* Remove default margin */
+  padding: 10px; /* Add some padding for spacing */
+}
+
+.event img {
+  width: 100%; /* Ensure the image fits its column */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image fills the height if needed */
+}
+
+.comicStory {
+  background-color: #f0f0f0; /* Optional: Add a background for visibility */
+  display: flex; /* Optional: Use flexbox for internal alignment */
+  justify-content: center; /* Optional: Center content horizontally */
+  align-items: center; /* Optional: Center content vertically */
+}
+
 p {
-color: black;
-// background: linear-gradient(90deg, yellow, orange);
+/* color: ; */
 text-align: center;
 padding: 20px;
 border-radius: 20px;
-position: ;
 }
-h1 {
-  color:teal;
-  background-color: ;
+
+/* h1 {
+  color: ;
   font-family: cursive;
   text-align: center;
-}
-h2{
+} */
+
+/* h2{
   color: tan;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
-}
-h3{
-  color: ;
-  background-color: ;
-  font-family: ;
-}
+} */
+
 a {
-  background-color: ;
   text-decoration: none;
 }
+
 a:link {
   color: black;
 }
+
 a:visited {
   color: cornflowerblue;
 }
+
 a:hover {
   color: red;
 }
+
 li {
-  background-color: ;
   border-radius: 10px;
-  font-family: ;
   font-size: large;
 }
+
 ul{
   list-style-type: none;
 }
+
 .batman {
   border: solid;
   border-radius: 100px;
@@ -176,50 +332,19 @@ ul{
   width: 200px;
   margin: 0 50px 0 50px;
 }
+
 .playstation {
   color: blue;
 }
+
 .xbox {
   color: green;
 }
+
 .nintendo {
   color: red;
 }
-#logobox {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-.logo {
-  height: 100px;
-  width: 100px;
-  background-size: cover;
-  background-position: center;
-  transition: background-image .5s ease;
-}
-#logo1 {
-  background-image: url(https://cdn.icon-icons.com/icons2/2845/PNG/512/playstation_logo_icon_181403.png);
-}
-#logo1:hover {
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Playstation_logo_colour.svg/2560px-Playstation_logo_colour.svg.png);
-  height: ;
-  width: ;
-}
-#logo2 {
-  background-image: url(https://logowik.com/content/uploads/images/xbox-black4601.jpg);
-}
-#logo2:hover {
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Xbox_one_logo.svg/2048px-Xbox_one_logo.svg.png);
-}
-#logo3 {
-  background-image: url(https://i.ebayimg.com/images/g/bAUAAOSwPRFfqxHY/s-l1200.webp);
-}
-#logo3:hover {
-  background-image: url(https://seeklogo.com/images/N/nintendo-switch-logo-38D4F5C7E7-seeklogo.com.png);
-}
-.games .movies .shows{
-  font-weight: bold;
-}
+
 .pokemon{
   background-color: black;
   padding: 10px 10px 10px 10px;
@@ -227,45 +352,39 @@ ul{
   width: 100px;
   border: 50px orange;
 }
-.gamepic {
-  width: 200px;
-  height: 100px;
-}
-.xmen97 {
-  height: 100px;
-  width: 100px;
-  border-radius: 50px;
-  margin: 30px;
-  float: right;
-}
+
 .banger{
   font-style:italic;
   font-weight: bold;
 }
+
 .finish {
   text-decoration: line-through;
 }
+
 table, th, td{
   border: black solid 4px;
   border-radius: px;
   background-color: beige;
   border-collapse: collapse;
-  border-color: ;
-  border-style: ;
   text-align: center;
   width: 100%;
   padding: 10px;
 }
+
 table{
   border-spacing: px;
 }
+
 td{
   border: solid 2px;
   border-radius: 0px;
 }
+
 caption{
   font-size: 30px;
 }
+
 tr:hover {
   background-color: cornflowerblue;
 }
