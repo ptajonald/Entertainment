@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+          <li style="color: white">Menu</li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gaming.html">Gaming</a></li>
+          <li><a href="cinema.html">Cinema</a></li>
+          <li><a href="streaming.html">Streaming</a></li>
+          <li><a href="music.html">Music</a></li>
+          <li><a href="sports.html">Sports</a></li>
+          <li><a href="ratings.html">Rating</a></li>
+        </ul>
+    </nav>
+
+    <div id="logos">
+        <div id="marvelLogo">
+            <img src="/Gauntlet/images/marvel/marvelLogo.png" alt="Marvel Logo" class="comicLogo" onclick="showMarvelComics()">
+        </div>
+        <div id="dcLogo">
+            <img src="/Gauntlet/images/dc/dcLogo.png" alt="DC Logo" class="comicLogo" onclick="showDcComics()">
+        </div>
+        <h3>Enter a world</h3>
+    </div>
+
+    <div id="marvel" class="hidden">
+        <div class="event" id="Secretwars1984">
+            <h3 class="read comic">Secret Wars (1984)</h3>
+            <img src="/Gauntlet/images/marvel/Secretwars1984.png" alt="Secret Wars #1 Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event" id="secretwarsii1985" style="display: none;">
+            <h3 class="read comic">Secret Wars II (1985)</h3>
+            <img src="/Gauntlet/images/marvel/secretwarsii1985.jpg" alt="Secret Wars II #1 Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event" id="theinfinitygauntlet1991" style="display: none;">
+            <h3 class="read comic">The Infinity Gauntlet (1991)</h3>
+            <img src="/Gauntlet/images/marvel/theinfinitygauntlet1991.jpg" alt="The Infinity Gaultlet #1 Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event" id="theinfinitywar1992" style="display: none;">
+            <h3 class="read comic">The Infinity War (1992)</h3>
+            <img src="/Gauntlet/images/marvel/theinfinitywar1992.jpg" alt="The Infinity War #1 Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event" id="avengersdisassembled2004" style="display: none;">
+            <h3 class="read comic">Avengers Disassembled (2004)</h3>
+            <img src="/Gauntlet/images/marvel/avengersdisassembled2004.jpg" alt="Avengers Disassembled #1 Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event" id="houseofm2005" style="display: none;">
+            <h3 class="read comic">House of M (2005)</h3>
+            <img src="/Gauntlet/images/marvel/houseofm2005.jpg" alt="House of M #1 Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event" id="secretwar2005" style="display: none;">
+            <h3 class="read comic">Secret War (2005)</h3>
+            <img src="/Gauntlet/images/marvel/secretwar2005.jpg" alt="Secret War Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event" id="civilwar2006" style="display: none;">
+            <h3 class="read comic">Civil War (2006)</h3>
+            <img src="/Gauntlet/images/marvel/civilwar2006.jpg" alt="Civil War #1 Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event" id="worldwarhulk2007" style="display: none;">
+            <h3 class="read comic">World War Hulk (2007)</h3>
+            <img src="/Gauntlet/images/marvel/worldwarhulk2007.jpg" alt="World War Hulk Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event" id="secretinvasion2008" style="display: none;">
+            <h3 class="read comic">Secret Invasion (2008)</h3>
+            <img src="/Gauntlet/images/marvel/secretinvasion2008.jpg" alt="Secret Invasion #1 Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event" id="darkreign2009" style="display: none;">
+            <h3 class="unread comic">Dark Reign (2009)</h3>
+            <img src="/Gauntlet/images/marvel/darkreign2009.jpg" alt="Dark Reign Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event" id="siege2010" style="display: none;">
+            <h3 class="read comic">Siege (2010)</h3>
+            <img src="/Gauntlet/images/marvel/siege2010.jpg" alt="Siege #1 Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event" id="fearitself2011" style="display: none;">
+            <h3 class="read comic">Fear Itself (2011)</h3>
+            <img src="/Gauntlet/images/marvel/fearitself2011.jpg" alt="Fear Itself Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event" id="avengersvsxmen2012" style="display: none;">
+            <h3 class="read comic">Avengers VS X-Men (2012)</h3>
+            <img src="/Gauntlet/images/marvel/avengersvsxmen2012.jpg" alt="Avengers VS X-Men Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event" id="childrenscrusade2012" style="display: none;">
+            <h3 class="unread comic">Children's Crusade (2012)</h3>
+            <img src="/Gauntlet/images/marvel/childrenscrusade2012.jpg" alt="Children's Crusade Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event" id="infinity2013" style="display: none;">
+            <h3 class="read comic">Infinity (2013)</h3>
+            <img src="/Gauntlet/images/marvel/infinity2013.jpg" alt="Infinity Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event" id="ageofultron2014" style="display: none;">
+            <h3 class="read comic">Age of Ultron (2014)</h3>
+            <img src="/Gauntlet/images/marvel/ageofultron2014.jpg" alt="Age of Ultron Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event" id="originalsin2014" style="display: none;">
+            <h3 class="read comic">Original Sin (2014)</h3>
+            <img src="/Gauntlet/images/marvel/originalsin2014.jpg" alt="Original Sin #1 Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event" id="axis2014" style="display: none;">
+            <h3 class="read comic">Axis (2014)</h3>
+            <img src="/Gauntlet/images/marvel/axis2014.jpg" alt="Axix Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event" id="secretwars2015" style="display: none;">
+            <h3 class="read comic">Secret Wars (2015)</h3>
+            <img src="/Gauntlet/images/marvel/secretwars2015.jpg" alt="Secret Wars (2015) Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event" id="civilwarii2016" style="display: none;">
+            <h3 class="read comic">Civil War II (2016)</h3>
+            <img src="/Gauntlet/images/marvel/civilwarii2016.jpg" alt="Civil War II Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event" id="inhumansvsxmen2016" style="display: none;">
+            <h3 class="unread comic">Inhumans VS X-Men (2016)</h3>
+            <img src="/Gauntlet/images/marvel/inhumansvsxmen2016.jpg" alt="Inhumans VS X-Men #1 Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event" id="secretempire2017" style="display: none;">
+            <h3 class="read comic">Secret Empire (2017)</h3>
+            <img src="/Gauntlet/images/marvel/secretempire2017.jpg" alt="Secret Empire Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event" id="waroftherealms2019" style="display: none;">
+            <h3 class="read comic">War of The Realms (2019)</h3>
+            <img src="/Gauntlet/images/marvel/waroftherealms2019.jpg" alt="War of The Realms #1 Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event" id="kinginblack2020" style="display: none;">
+            <h3 class="read comic">King In Black (2020)</h3>
+            <img src="/Gauntlet/images/marvel/kinginblack2020.jpg" alt="King In Black #1 Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event" id="empyre2020" style="display: none;">
+            <h3 class="unread comic">Empyre (2020)</h3>
+            <img src="/Gauntlet/images/marvel/empyre2020.jpg" alt="Empyre Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event" id="devilsreign2021" style="display: none;">
+            <h3 class="unread comic">Devils Reign (2021)</h3>
+            <img src="/Gauntlet/images/marvel/devilsreign2021.jpg" alt="Devils Reign" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event" id="judgmentday2022" style="display: none;">
+            <h3 class="unread comic">Judgment Day (2022)</h3>
+            <img src="/Gauntlet/images/marvel/judgmentday2022.jpg" alt="Judgment Day #1 Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <button onclick="previousComic(marvelComics)">Previous</button>
+        <button onclick="nextComic(marvelComics)">Next</button>
+        <button onclick="goBack()">Back</button>
+    </div>
+
+    <div id="dc" class="hidden">
+        <div class="event" id="1984crisisoninfiniteearths">
+            <h3 class="unread comic">Crisis On Infinite Earths (1984)</h3>
+            <img src="/Gauntlet/images/dc/1984crisisoninfiniteearths.jpg" alt="Crisis On Infinite Earths Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event" id="1988cosmicodyssey" style="display: none;">
+            <h3 class="unread comic">Cosmic Odyssey (1988)</h3>
+            <img src="/Gauntlet/images/dc/1988cosmicodyssey.jpg" alt="Cosmic Odyssey Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event" id="1988thekillingjoke" style="display: none;">
+            <h3 class="unread comic">The Killing Joke (1988)</h3>
+            <img src="/Gauntlet/images/dc/1988thekillingjoke.jpg" alt="The Killing Joke Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event" id="1991armageddon2001" style="display: none;">
+            <h3 class="unread comic">Armageddon 2001 (1991)</h3>
+            <img src="/Gauntlet/images/dc/1991armageddon2001.png" alt="Armageddon 2001 Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event" id="1993deathofsuperman" style="display: none;">
+            <h3 class="unread comic">The Death of Superman (1993)</h3>
+            <img src="/Gauntlet/images/dc/1993deathofsuperman.jpg" alt="The Death of Superman Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event" id="1993knightfall" style="display: none;">
+            <h3 class="unread comic">Batman: Knightfall (1993)</h3>
+            <img src="/Gauntlet/images/dc/1993knightfall.jpg" alt="Batman Knightfall Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event" id="1994zerohour" style="display: none;">
+            <h3 class="unread comic">Zero Hour (1994)</h3>
+            <img src="/Gauntlet/images/dc/1994zerohour.jpg" alt="Zero Hour Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event" id="1995underworldunleashed" style="display: none;">
+            <h3 class="unread comic">Underworld Unleashed (1995)</h3>
+            <img src="/Gauntlet/images/dc/1995underworldunleashed.jpg" alt="Underworld Unleashed Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event" id="1996thefinalnight" style="display: none;">
+            <h3 class="unread comic">The Final Night (1996)</h3>
+            <img src="/Gauntlet/images/dc/1996thefinalnight.webp" alt="The Final Night Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event" id="1998dc1million" style="display: none;">
+            <h3 class="unread comic">Dc 1 Million (1998)</h3>
+            <img src="/Gauntlet/images/dc/1998dc1million.jpg" alt="DC 1 million Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event" id="1999dayofjudgment" style="display: none;">
+            <h3 class="unread comic">Day of Judgment (1999)</h3>
+            <img src="/Gauntlet/images/dc/1999dayofjudgment.jpg" alt="Day of Judgment Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event" id="2000towerofbabel" style="display: none;">
+            <h3 class="unread comic">Tower of Babel (2000)</h3>
+            <img src="/Gauntlet/images/dc/2000towerofbabel.jpg" alt="Tower of Babel Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event" id="2004identitycrisis" style="display: none;">
+            <h3 class="unread comic">Identity Crisis (2004)</h3>
+            <img src="/Gauntlet/images/dc/2004identitycrisis.jpg" alt="Identity Crisis Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event" id="2005infinitecrisis" style="display: none;">
+            <h3 class="unread comic">Infinite Crisis (2005)</h3>
+            <img src="/Gauntlet/images/dc/2005infinitecrisis.jpg" alt="Infinite Crisis Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event" id="2008finalcrisis" style="display: none;">
+            <h3 class="unread comic">Final Crisis (2008)</h3>
+            <img src="/Gauntlet/images/dc/2008finalcrisis.jpg" alt="Final Crisis Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event" id="2009blackestnight" style="display: none;">
+            <h3 class="unread comic">Blackest Night (2009)</h3>
+            <img src="/Gauntlet/images/dc/2009blackestnight.jpg" alt="Blackest Night Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event" id="2010brightestday" style="display: none;">
+            <h3 class="unread comic">Brightest Day (2010)</h3>
+            <img src="/Gauntlet/images/dc/2010brightestday.jpg" alt="Brightest Day Coverart" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event">
+            <h3 class="unread comic"></h3>
+            <img src="" alt="" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event">
+            <h3 class="unread comic"></h3>
+            <img src="" alt="" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <div class="event">
+            <h3 class="unread comic"></h3>
+            <img src="" alt="" class="frontPage">
+            <div class="comicStory"></div>
+        </div>
+        <button onclick="previousComic(dcComics)">Previous</button>
+        <button onclick="nextComic(dcComics)">Next</button>
+        <button onclick="goBack()">Back</button>
+    </div>
+
+    <script>
+        const marvelComics = ["Secretwars1984", "secretwarsii1985", "theinfinitygauntlet1991", "theinfinitywar1992", "avengersdisassembled2004", "houseofm2005", "secretwar2005", "civilwar2006", "worldwarhulk2007", "secretinvasion2008", "darkreign2009", "siege2010", "fearitself2011", "avengersvsxmen2012", "childrenscrusade2012", "infinity2013", "ageofultron2014", "originalsin2014", "axis2014", "secretwars2015", "civilwarii2016", "inhumansvsxmen2016", "secretempire2017", "waroftherealms2019", "kinginblack2020", "empyre2020", "devilsreign2021", "judgmentday2022"]; // Replace with actual comic content or image paths
+        const dcComics = ["1984crisisoninfiniteearths", "1988cosmicodyssey", "1988thekillingjoke", "1991armageddon2001", "1993deathofsuperman", "1993knightfall", "1994zerohour", "1995underworldunleashed", "1996thefinalnight", "1998dc1million", "1999dayofjudgment", "2000towerofbabel", "2004identitycrisis", "2005infinitecrisis", "2008finalcrisis", "2009blackestnight", "2010brightestday" ];
+        let currentComicIndex = 0;
+
+        function showMarvelComics() {
+            document.getElementById("logos").style.display = "none";
+            document.getElementById("marvel").style.display = "block";
+            currentComicIndex = 0;
+            updateComicDisplay(marvelComics);
+        }
+
+        function showDcComics() {
+            document.getElementById("logos").style.display = "none";
+            document.getElementById("dc").style.display = "block";
+            currentComicIndex = 0;
+            updateComicDisplay(dcComics);
+        }
+
+        function goBack() {
+            document.getElementById("logos").style.display = "grid";
+            document.getElementById("marvel").style.display = "none";
+            document.getElementById("dc").style.display = "none";
+        }
+
+        function nextComic(comics) {
+            if (currentComicIndex < comics.length - 1) {
+                currentComicIndex++;
+                updateComicDisplay(comics);
+            }
+        }
+
+        function previousComic(comics) {
+            if (currentComicIndex > 0) {
+                currentComicIndex--;
+                updateComicDisplay(comics);
+            }
+        }
+
+        function updateComicDisplay(comics) {
+             // Hide all comics
+            comics.forEach(id => {
+                document.getElementById(id).style.display = "none";
+            });
+
+            // Show the current comic
+            document.getElementById(comics[currentComicIndex]).style.display = "grid";
+        }   
+        </script>
+
+</body>
+</html>
